@@ -1,0 +1,66 @@
+using System;
+
+namespace Trainingwithcshap
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {   
+            int i, j;
+            int[] a = new int[10];
+            int[] b = new int[] { 10, 20, 30, 40, 50 };
+            for (i = 0; i < a.Length; i++)
+            {
+                a[i] = i;
+                Console.Write("\t" + a[i]);
+            }
+            Console.Write("\n");
+            for (i = 0; i < b.Length; i++)
+            {
+                Console.Write("\t" + b[i]);
+            }
+            int[,] c = new int[, ] { {1,2 },{3,4 } };//fixed 2D
+            int[,] f = new int[2, 2];
+            int[,,]e= new int[3, 3, 3];//Multi dimentional
+            int[][] d = new int[2][];//jagged array declaration 
+            d[0] = new int[5];
+            d[1] = new int[3];
+            for(i=0;i<2;i++)
+            {
+                for(j=0;j<2;j++)
+                {
+                    Console.Write("\t" + c[i, j]);
+                }
+            }
+            Console.Write("\n");
+            for (i = 0; i < 2; i++)
+            {
+                for (j = 0; j < 2; j++)
+                {
+                    f[i, j] = i + j;
+                    Console.Write("\t" + f[i, j]);
+                }
+            }
+            Console.Write("\n");
+            i = 0;
+            for (j = 0; j < 5; j++)
+            {
+                d[i][j] = i + j;
+                Console.Write("\t" + d[i][j]);
+            }
+            Console.Write("\n");
+            i = 1;
+            for (j = 0; j < 3; j++)
+            {
+                d[i][j] = i + j;
+                Console.Write("\t" + d[i][j]);
+            }
+
+
+
+
+
+        }
+    }
+}
+    
